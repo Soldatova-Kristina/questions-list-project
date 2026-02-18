@@ -1,0 +1,14 @@
+.link {
+  color: var(--font-color-h);
+  line-height: var(--line-height-medium);
+}
+
+.link:hover {
+  color: var(--font-color-sidebar);
+}
+
+.active {
+  color: var(--purple-dark);
+  font-weight: 600;
+  line-height: var(--line-height-sm);
+}

@@ -1,7 +1,7 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from "react-router-dom";
 
-import Layout from '@/app/layouts/layouts';
-import Error404Page from '@/pages/error404-page';
+import Layout from "@/app/layouts/layouts";
+import Error404Page from "@/pages/error404-page";
 
 export const router = createBrowserRouter([
   {
@@ -10,11 +10,11 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        lazy: () => import('@/pages/question-main-page'),
+        lazy: () => import("@/pages/question-main-page"),
       },
       {
-        path: 'question/:id',
-        lazy: () => import('@/pages/question-detailed-page'),
+        path: "question/:id",
+        lazy: () => import("@/pages/question-detailed-page"),
       },
     ],
   },

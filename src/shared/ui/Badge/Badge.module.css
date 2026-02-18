@@ -1,0 +1,15 @@
+.badge {
+  color: var(--purple-dark);
+  font-weight: 400;
+  line-height: var(--line-height-xl);
+}
+
+.rating,
+.difficulty {
+  background: var(--purple-dark);
+  color: var(--font-color-white);
+  font-size: var(--font-size-sm);
+  padding: 2px 4px 2px 4px;
+  border-radius: var(--radius-xs);
+  font-weight: 600;
+}
