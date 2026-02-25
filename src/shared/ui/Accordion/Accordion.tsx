@@ -1,6 +1,7 @@
 import clsx from "clsx";
 
 import { useToggle } from "@/shared/hooks/useToggle";
+
 import { Icon } from "../Icon";
 
 import styles from "./Accordion.module.css";
