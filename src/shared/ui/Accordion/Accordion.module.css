@@ -1,8 +1,8 @@
 .accordion {
   background: white;
-  border: 1px solid var(--color-border);
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: var(--box-shadow);
 }
 
 .header {
@@ -11,6 +11,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 16px;
+  gap: 10px;
   background: none;
   border: none;
   cursor: pointer;
@@ -19,6 +20,9 @@
 }
 
 .title {
+  display: flex;
+  gap: 8px;
+  padding-left: 16px;
   font-size: var(--font-size-lg);
   color: var(--font-color-h);
 }
@@ -27,12 +31,13 @@
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  transition: transform 0.2s ease;
+  transition: transform 0.6s ease;
 }
 
 .iconOpen {
   transform: rotate(180deg);
 }
+
 .content {
   padding: 0 16px 16px 16px;
 }

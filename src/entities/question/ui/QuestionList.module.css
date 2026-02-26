@@ -1,0 +1,43 @@
+.metaData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 24px;
+}
+
+.badge {
+  background-color: #f8f8f8;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.menuButton {
+  margin-right: 24px;
+}
+
+.menuButton:hover {
+  padding: 10px 20px;
+  background-color: #eae9e9;
+  border-radius: var(--radius-sm);
+}
+
+.codeBlock {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.codeBlock code {
+  font-family: monospace !important;
+  font-size: 14px !important;
+  color: var(--color-green-700) !important;
+  line-height: 1.6 !important;
+}
+
+.answer {
+  margin-top: 24px;
+}

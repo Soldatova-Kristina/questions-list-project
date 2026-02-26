@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export type BadgeVariant = "difficulty" | "raiting" | "hashtag";
+export type BadgeVariant = "complexity" | "rating" | "hashtag";
 
 export interface BadgeProps {
   variant?: BadgeVariant;

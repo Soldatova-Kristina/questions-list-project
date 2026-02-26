@@ -1,11 +1,16 @@
-.badge {
-  color: var(--purple-dark);
+.badgeCount {
+  background-color: var(--purple-dark);
+  color: var(--font-color-white);
+  border-radius: var(--radius-xs);
+  margin-left: 14px;
+  padding: 2px 4px;
   font-weight: 400;
   line-height: var(--line-height-xl);
+  gap: 10px;
 }
 
 .rating,
-.difficulty {
+.complexity {
   background: var(--purple-dark);
   color: var(--font-color-white);
   font-size: var(--font-size-sm);

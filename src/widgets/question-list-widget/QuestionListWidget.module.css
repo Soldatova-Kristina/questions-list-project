@@ -1,0 +1,19 @@
+.container {
+  background-color: var(--font-color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius-lg);
+}
+
+.title {
+  padding: 10px 16px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 24px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

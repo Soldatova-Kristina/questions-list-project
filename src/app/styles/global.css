@@ -11,6 +11,7 @@ h1 {
   color: var(--font-color-h);
   font-size: var(--font-size-xl);
   line-height: var(--line-height-sm);
+  font-weight: 500;
 }
 
 h2 {

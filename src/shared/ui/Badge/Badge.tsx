@@ -5,7 +5,7 @@ import type { BadgeProps } from "./Badge.types";
 
 export function Badge({ variant, children, className }: BadgeProps) {
   return (
-    <span className={clsx(styles.badge, styles.variant, className)}>
+    <span className={clsx(styles.badgeCount, styles.variant, className)}>
       {variant === "hashtag" && "#"}
       {children}
     </span>

@@ -1,7 +1,9 @@
 .pagination {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 .page {
@@ -13,14 +15,16 @@
   align-items: center;
   justify-content: center;
   background-color: var(----font-color-white);
-  gap: 5px;
+  /* gap: 5px; */
 }
 
 .page:hover {
-  border: none;
-  background: var(----purple-dark);
+  /* border: none;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: var(----purple-dark);
   color: var(----font-color-white);
-  font-weight: 600;
+  font-weight: 600; */
 }
 
 .active {

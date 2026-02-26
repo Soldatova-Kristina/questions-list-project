@@ -10,12 +10,12 @@ const specializationApi = baseApi.injectEndpoints({
   endpoints: (build) => ({
     getSpecialization: build.query<GetQuestionSpecializationResponse, GetSpecializationParams>({
       query: (params) => ({
-        url: '/specializations',
+        url: "/specializations",
         params: normalizeParams(params),
       }),
-      providesTags: ['Specialization'],
+      providesTags: ["Specialization"],
     }),
   }),
-})
+});
 
 export const { useGetSpecializationQuery } = specializationApi;
