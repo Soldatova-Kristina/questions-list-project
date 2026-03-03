@@ -2,6 +2,7 @@ import type { QuestionSkill } from "@/entities/skill/model/skill.types";
 import type { QuestionSpecialization } from "@/entities/specialization/model/specialization.types";
 
 export interface Question {
+  data: string;
   id: number;
   title: string;
   description: string;

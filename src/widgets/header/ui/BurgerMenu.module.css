@@ -1,0 +1,22 @@
+.burger-menu {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.burger-menu__item {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.burger-menu__link {
+  display: flex;
+}
+
+.burger-menu__text {
+  font-size: var(--font-size-lg);
+}

@@ -1,16 +1,21 @@
-.container {
+.question-list {
   background-color: var(--font-color-white);
   box-shadow: var(--box-shadow);
   border-radius: var(--radius-lg);
+  padding-top: 10px;
 }
 
-.title {
-  padding: 10px 16px;
+.question-list__title {
+  padding: 30px;
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 24px;
 }
 
-.list {
+.question-list__title-skeleton {
+  margin: 30px 20px;
+}
+
+.question-list__list {
   display: flex;
   flex-direction: column;
   gap: 24px;

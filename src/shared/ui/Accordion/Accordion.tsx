@@ -14,7 +14,11 @@ export function Accordion({ title, children, className }: AccordionProps) {
     <div className={clsx(styles.accordion, className)}>
       <button onClick={toggle} className={styles.header} aria-expanded={isOpen}>
         <div className={styles.title}>{title}</div>
-        <Icon name="arrow-down" className={clsx(styles.icon, isOpen && styles.iconOpen)} />
+        <Icon
+          size={16}
+          name="arrow-down"
+          className={clsx(styles.icon, isOpen && styles.iconOpen)}
+        />
       </button>
       {isOpen && <div className={styles.content}>{children}</div>}
     </div>

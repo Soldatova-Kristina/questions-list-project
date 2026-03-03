@@ -2,9 +2,9 @@ import { QuestionListWidget } from "@/widgets/question-list-widget/QuestionListW
 
 function QuestionMainPage() {
   return (
-    <div>
+    <>
       <QuestionListWidget />
-    </div>
+    </>
   );
 }
 

@@ -11,26 +11,17 @@
   line-height: var(--line-height-sm);
   cursor: pointer;
   transition: all 0.2s;
-  padding: 12px;
+  padding: 6px;
   align-items: center;
   justify-content: center;
   background-color: var(----font-color-white);
-  /* gap: 5px; */
-}
-
-.page:hover {
-  /* border: none;
-  border-radius: 8px;
-  padding: 8px;
-  background-color: var(----purple-dark);
-  color: var(----font-color-white);
-  font-weight: 600; */
-}
-
-.active {
   border: none;
-  background: var(----purple-dark);
-  color: var(----font-color-white);
+  border-radius: 8px;
+}
+
+.page.active {
+  background-color: var(--purple-dark);
+  color: var(--font-color-white);
   font-weight: 600;
   font-size: var(--font-size-base);
 }

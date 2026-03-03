@@ -13,8 +13,8 @@ export const router = createBrowserRouter([
         lazy: () => import("@/pages/question-main-page"),
       },
       {
-        path: "question/:id",
-        lazy: () => import("@/pages/question-detailed-page"),
+        path: "/question/:id",
+        lazy: () => import("@/pages/question-detail-page"),
       },
     ],
   },

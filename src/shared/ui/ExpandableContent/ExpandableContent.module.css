@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+}
+
+.content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.collapsed {
+  position: relative;
+}
+
+.collapsed::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, white);
+  pointer-events: none;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 import { useGetQuestionQuery } from "@/entities/question/api/questionApi";
-import { QuestionList } from "@/entities/question/ui/QuestionList";
+import { QuestionCard } from "@/entities/question/ui/QuestionCard/QuestionCard";
 import { getTotalPages } from "@/shared/lib/pagination/getTotalPages";
 import { Pagination } from "@/shared/ui/Pagination";
-import { Skeleton } from "@/shared/ui/Skeleton";
 
 import styles from "./QuestionListWidget.module.css";
+import { QuestionListSkeleton } from "./QuestionListWidget.skeleton";
 
 export function QuestionListWidget() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -17,28 +17,22 @@ export function QuestionListWidget() {
   const title = "Вопросы React, JavaScript";
 
   if (isLoading) {
-    return (
-      <div className={styles.container}>
-        <Skeleton width="100%" height={120} />
-        <Skeleton width="100%" height={120} />
-        <Skeleton width="100%" height={120} />
-      </div>
-    );
+    return <QuestionListSkeleton />;
   }
 
   if (!data?.data.length) {
-    return <div className={styles.empty}>Вопросов пока нет</div>;
+    return <div>Вопросов пока нет</div>;
   }
 
   const totalPages = getTotalPages(data.total, limit);
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>{title}</h1>
+    <div className={styles["question-list"]}>
+      <h1 className={styles["question-list__title"]}>{title}</h1>
 
-      <div className={styles.list}>
+      <div className={styles["question-list__list"]}>
         {data.data.map((question) => (
-          <QuestionList key={question.id} question={question} />
+          <QuestionCard key={question.id} question={question} />
         ))}
       </div>
 

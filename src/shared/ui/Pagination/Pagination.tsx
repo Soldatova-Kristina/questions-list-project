@@ -17,7 +17,7 @@ export function Pagination({ currentPage, totalPages, onPageChange, className }:
   };
 
   const handleNext = () => {
-    if (currentPage > totalPages) {
+    if (currentPage < totalPages) {
       onPageChange(currentPage + 1);
     }
   };
