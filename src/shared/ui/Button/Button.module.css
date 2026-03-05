@@ -1,6 +1,5 @@
 .button {
   background-color: var(--font-color-white);
-  border: none;
   border-radius: 12px;
   font-size: 16px;
   gap: var(--gap-sm);
@@ -18,12 +17,16 @@
 }
 
 .filter {
-  border: 1px solid color var(--border-color-gray);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  border: 1px solid #bababa;
   color: var(--font-color-sidebar);
+  white-space: nowrap;
 }
 
 .filterActive {
-  border: 1px solid color var(--purple-dark);
+  border: 1px solid var(--purple-dark);
 }
 
 .disabled {

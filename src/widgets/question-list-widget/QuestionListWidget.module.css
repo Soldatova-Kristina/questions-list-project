@@ -3,6 +3,7 @@
   box-shadow: var(--box-shadow);
   border-radius: var(--radius-lg);
   padding-top: 10px;
+  max-width: 804px;
 }
 
 .question-list__title {
@@ -22,3 +23,5 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* Найти причину прыгающего контента при открытии вопроса */

@@ -3,7 +3,7 @@
   font-family: Manrope;
   font-style: normal;
   font-weight: 400;
-  src: url("@/shared/assets/fonts/Manrop-Regular.woff2") format("woff2");
+  src: url("@/shared/assets/fonts/Manrope-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: Manrope;
   font-style: normal;
   font-weight: 500;
-  src: url("@/shared/assets/fonts/Manrop-Medium.woff2") format("woff2");
+  src: url("@/shared/assets/fonts/Manrope-Medium.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,5 +19,5 @@
   font-family: Manrope;
   font-style: normal;
   font-weight: 600;
-  src: url("@/shared/assets/fonts/Manrop-SemiBold.woff2") format("woff2");
+  src: url("@/shared/assets/fonts/Manrope-SemiBold.woff2") format("woff2");
 }

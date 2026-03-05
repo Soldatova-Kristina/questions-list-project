@@ -25,7 +25,7 @@
 }
 
 .footer__slogan {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   line-height: var(--line-height-xl);
   font-weight: 600;
   margin: 0 0 12px;

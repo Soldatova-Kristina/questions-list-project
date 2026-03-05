@@ -1,0 +1,17 @@
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-section__title {
+  font-size: 14px;
+  color: #474747;
+  font-weight: 400;
+}
+
+.sidebar-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+/* разобраться с отступами между навыками */

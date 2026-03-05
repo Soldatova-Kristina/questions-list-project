@@ -1,19 +1,19 @@
 import { Accordion } from "@/shared/ui/Accordion";
-import { Badge } from "@/shared/ui/Badge";
 import { Dropdown } from "@/shared/ui/Dropdown/Dropdown";
 import { Icon } from "@/shared/ui/Icon";
 
 import type { Question } from "../../model/question.types";
 import { QuestionAnswer } from "../QuestionAnswer/QuestionAnswer";
+import { QuestionMeta } from "../QuestionMeta/QuestionMeta";
 
-import styles from "./QuestionCard.module.css";
-import { QuestionCardMenu } from "./QuestionCardMenu";
+import styles from "./QuestionItem.module.css";
+import { QuestionItemMenu } from "./QuestionItemMenu";
 
-interface QuestionCardProps {
+interface QuestionItemProps {
   question: Question;
 }
 
-export function QuestionCard({ question }: QuestionCardProps) {
+export function QuestionItem({ question }: QuestionItemProps) {
   const questionTitle = (
     <>
       <Icon name="ellipse" />
@@ -23,25 +23,17 @@ export function QuestionCard({ question }: QuestionCardProps) {
 
   const questionContent = (
     <>
-      <div className={styles["question-card__meta"]}>
-        <div className={styles["question-card__badges"]}>
-          <div className={styles["question-card__badge"]}>
-            Рейтинг: <Badge variant="rating">{question.rate}</Badge>
-          </div>
-
-          <div className={styles["question-card__badge"]}>
-            Сложность:<Badge variant="complexity">{question.complexity}</Badge>
-          </div>
-        </div>
+      <div className={styles["question-item_meta-info"]}>
+        <QuestionMeta rate={question.rate} complexity={question.complexity} />
 
         <Dropdown
           trigger={
-            <button className={styles["question-card__menu-button"]}>
+            <button className={styles["question-item__menu-button"]}>
               <Icon name="kebab-menu" />
             </button>
           }
         >
-          <QuestionCardMenu questionId={question.id} />
+          <QuestionItemMenu questionId={question.id} />
         </Dropdown>
       </div>
 

@@ -6,7 +6,6 @@ export interface QuestionSpecialization {
   createdAt?: string;
   updatedAt?: string;
 }
-
 export interface GetQuestionSpecializationResponse {
   total: number;
   page: number;
@@ -18,5 +17,5 @@ export type GetSpecializationParams = {
   page?: number;
   limit?: number;
   authorId?: string;
-  title: string;
+  title?: string;
 };

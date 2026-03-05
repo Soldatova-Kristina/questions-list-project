@@ -19,7 +19,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles["header__nav-links"]}>
         <Logo variant="header" />
-        <nav className={styles.nav}>
+        <nav className={styles["header__nav"]}>
           {navLinks.map((link) => (
             <Link key={link.to} to={link.to} className={styles["header__nav-link"]}>
               {link.label}

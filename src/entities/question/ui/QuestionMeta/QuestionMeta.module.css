@@ -1,0 +1,15 @@
+.question-meta {
+  display: flex;
+  gap: 20px;
+}
+
+.question-meta__item {
+  display: flex;
+  align-items: center;
+}
+
+.question-meta__item {
+  background-color: var(--background-color-base);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+}

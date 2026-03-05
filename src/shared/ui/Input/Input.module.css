@@ -1,16 +1,27 @@
 .wrapper {
   position: relative;
+  gap: 30px;
 }
 
 .input {
   width: 100%;
   height: 48px;
-  padding: 12px 24 12px 24px;
   border-radius: 68px;
   background-color: var(--font-color-white);
   border: 1px solid var(--border-input-color-gray);
-  color: var(--font-color-input);
+  color: var(--font-color-sidebar);
   line-height: var(--line-height-normal);
   font-weight: 400;
-  outline: none;
+  padding-left: 50px;
+}
+
+.input::placeholder {
+  color: var(--font-color-input);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
 }

@@ -1,0 +1,13 @@
+.question-detail-page {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.question-detail-page__back {
+  grid-column: 1 / -1;
+}

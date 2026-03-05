@@ -9,7 +9,7 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <main className={styles.content}>
+      <main className={styles["main_content"]}>
         <Outlet />
       </main>
       <Footer />

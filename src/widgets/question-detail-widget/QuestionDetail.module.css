@@ -41,8 +41,27 @@
   font-weight: 600;
   color: var(--font-color-sidebar);
   line-height: 1.1;
+  padding: 10px;
+}
+
+.question-detail__nav-button:hover {
+  background-color: #eae9e9;
+  border-radius: var(--radius-sm);
+  color: var(--purple-dark) !important;
 }
 
 .question-detail__section-title {
   font-size: var(--font-size-lg);
+}
+
+@media (max-width: 768px) {
+  .question-detail__header {
+    flex-direction: column;
+  }
+
+  .question-detail__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

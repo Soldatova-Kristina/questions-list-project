@@ -1,7 +1,6 @@
 import { ExpandableContent } from "@/shared/ui/ExpandableContent/ExpandableContent";
 
 import styles from "./QuestionAnswer.module.css";
-
 interface QuestionAnswerProps {
   content?: string | null;
   emptyMessage?: string;

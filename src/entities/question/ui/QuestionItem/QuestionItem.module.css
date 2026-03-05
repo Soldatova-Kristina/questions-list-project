@@ -1,0 +1,15 @@
+.question-item_meta-info {
+  display: flex;
+  justify-content: space-between;
+}
+.question-item__menu-button {
+  margin-right: 24px;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.question-item__menu-button:hover {
+  background-color: #eae9e9;
+}

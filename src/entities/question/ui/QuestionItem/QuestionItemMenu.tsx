@@ -1,13 +1,13 @@
 import { Icon } from "@/shared/ui/Icon";
 import { Link } from "@/shared/ui/Link";
 
-import styles from "./QuestionCardMenu.module.css";
+import styles from "./QuestionItemMenu.module.css";
 
-interface QuestionCardMenuProps {
+interface QuestionItemMenuProps {
   questionId: number;
 }
 
-export function QuestionCardMenu({ questionId }: QuestionCardMenuProps) {
+export function QuestionItemMenu({ questionId }: QuestionItemMenuProps) {
   const menuItems = [
     { to: `/question/${questionId}`, icon: "more-icon", label: "More" },
     { to: "/404", icon: "graduation-cap", label: "Learn" },
