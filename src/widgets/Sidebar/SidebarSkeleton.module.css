@@ -1,0 +1,20 @@
+.sidebar-list,
+.sidebar-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: var(--font-color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+}
+
+.sidebar-list {
+  max-width: 394px;
+  gap: 24px;
+}
+
+.sidebar-detail {
+  max-width: 390px;
+  gap: var(--gap-xl);
+}

@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+.question-detail-page__skeleton {
+  display: flex;
+  gap: 40px;
+}
 .question-detail-page__back {
   grid-column: 1 / -1;
 }

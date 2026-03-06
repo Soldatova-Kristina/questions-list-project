@@ -12,7 +12,7 @@ export function QuestionDetailSkeleton() {
           </div>
 
           <div className={styles["question-detail__header-content"]}>
-            {[...Array(3)].map((_, index) => (
+            {[...Array(12)].map((_, index) => (
               <Skeleton
                 key={index}
                 width="80%"
@@ -24,39 +24,6 @@ export function QuestionDetailSkeleton() {
           </div>
         </div>
       </section>
-
-      <section className={styles["question-detail"]}>
-        <div className={styles["question-detail__navigation"]}>
-          {[...Array(2)].map((_, index) => (
-            <Skeleton key={index} width={140} height={40} borderRadius={12} />
-          ))}
-        </div>
-      </section>
-
-      <section className={styles["question-detail"]}>
-        {[...Array(4)].map((_, index) => (
-          <Skeleton
-            key={index}
-            width="95%"
-            height={20}
-            style={{ marginBottom: "16px" }}
-            borderRadius={12}
-          />
-        ))}
-      </section>
-
-      <section className={styles["question-detail"]}>
-        <Skeleton width={250} height={28} style={{ marginBottom: "16px" }} borderRadius={12} />
-        {[...Array(5)].map((_, index) => (
-          <Skeleton
-            key={index}
-            width="95%"
-            height={20}
-            style={{ marginBottom: "16px" }}
-            borderRadius={12}
-          />
-        ))}
-      </section>
-    </>
-  );
+      </>
+  )
 }

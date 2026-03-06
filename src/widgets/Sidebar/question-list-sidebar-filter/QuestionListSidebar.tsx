@@ -12,7 +12,7 @@ export default function QuestionListSidebar() {
   return (
     <div className={styles["question-list-sidebar"]}>
       <SearchByKeywords />
-      <SidebarSection title="Специализация">
+      <SidebarSection variant="column" title="Специализация">
         <FilterBySpecialization />
       </SidebarSection>
       <SidebarSection title="Навыки">

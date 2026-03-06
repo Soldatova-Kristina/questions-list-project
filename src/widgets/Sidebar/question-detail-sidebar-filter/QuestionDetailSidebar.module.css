@@ -1,0 +1,23 @@
+.question-detail-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  padding: 24px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--font-color-white);
+  border-radius: var(--radius-lg);
+  max-width: 390px;
+}
+
+.question-detail-sidebar__skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--purple-dark);
+  border-radius: 12px;
+  font-size: 14px;
+  color: var(--font-color-sidebar);
+  background: var(--font-color-white);
+  width: fit-content;
+}

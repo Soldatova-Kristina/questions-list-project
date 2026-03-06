@@ -1,42 +1,29 @@
-import { useGetQuestionQuery } from "@/entities/question/api/questionApi";
+// @/widgets/question-list-widget/QuestionListWidget.tsx
+import type { GetQuestionResponse } from "@/entities/question/model/question.types";
 import { QuestionItem } from "@/entities/question/ui/QuestionItem/QuestionItem";
-import { usePagination } from "@/features/pagination/usePagination";
 import { getTotalPages } from "@/shared/lib/pagination/getTotalPages";
 import { Pagination } from "@/shared/ui/Pagination";
 
 import styles from "./QuestionListWidget.module.css";
-import { QuestionListSkeleton } from "./QuestionListWidget.skeleton";
 
-const LIMIT = 10;
+interface QuestionListWidgetProps {
+  data?: GetQuestionResponse;
+  currentPage: number;
+  onPageChange: (page: number) => void;
+  limit: number;
+}
 
-export function QuestionListWidget() {
-  const { currentPage, setPage, searchParams } = usePagination();
-
-  const params = {
-    page: currentPage,
-    limit: LIMIT,
-    title: searchParams.get("title") || undefined,
-    skills: searchParams.get("skills") ?? undefined,
-    specializationId: searchParams.get("specializationId")
-      ? Number(searchParams.get("specializationId"))
-      : undefined,
-    complexity: searchParams.get("complexity") ?? undefined,
-    rate: searchParams.get("rate") ?? undefined,
-  };
-
-  const { data, isLoading } = useGetQuestionQuery(params, {
-    refetchOnMountOrArgChange: true,
-  });
-
-  if (isLoading) {
-    return <QuestionListSkeleton />;
+export function QuestionListWidget({
+  data,
+  currentPage,
+  onPageChange,
+  limit,
+}: QuestionListWidgetProps) {
+  if (!data?.data || data.data.length === 0) {
+    return <div className={styles["empty-state"]}>Вопросов пока нет</div>;
   }
 
-  if (!data?.data.length) {
-    return <div>Вопросов пока нет</div>;
-  }
-
-  const totalPages = getTotalPages(data.total, LIMIT);
+  const totalPages = getTotalPages(data.total, limit);
 
   return (
     <div className={styles["question-list"]}>
@@ -48,7 +35,7 @@ export function QuestionListWidget() {
       </div>
 
       {totalPages > 1 && (
-        <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setPage} />
+        <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />
       )}
     </div>
   );

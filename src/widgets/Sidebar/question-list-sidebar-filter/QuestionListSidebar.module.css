@@ -1,7 +1,7 @@
 .question-list-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 10px;
   padding: 24px;
   box-shadow: var(--box-shadow);
   background-color: var(--font-color-white);

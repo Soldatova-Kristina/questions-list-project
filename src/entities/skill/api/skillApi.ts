@@ -25,7 +25,7 @@ const skillApi = baseApi.injectEndpoints({
 
     getSkillById: build.query<{ data: QuestionSkill }, number>({
       query: (id) => `/skills/${id}`,
-      providesTags: (result, error, id) => [{ type: "Skill", id }],
+      providesTags: (_result, _error, id) => [{ type: "Skill", id }],
     }),
   }),
 });

@@ -1,12 +1,14 @@
 .sidebar-section {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .sidebar-section__title {
   font-size: 14px;
-  color: #474747;
+  color: var(--font-color-base);
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .sidebar-section__list {
@@ -14,4 +16,16 @@
   flex-wrap: wrap;
   gap: 8px;
 }
-/* разобраться с отступами между навыками */
+
+.sidebar-section__list-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sidebar-section__list-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}

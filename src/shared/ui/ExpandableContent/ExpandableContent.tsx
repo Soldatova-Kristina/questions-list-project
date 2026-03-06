@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { useState } from "react";
 
-import { Icon } from "@/shared/ui/Icon";
+import { Icon } from "../Icon";
 
 import { Button } from "../Button";
 
